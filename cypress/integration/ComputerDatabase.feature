@@ -6,8 +6,8 @@ Scenario Outline: Add computer with all fields filled
     And fill the data to adding the computer
     | pcName                      | introducedDate | discontinuedDate | company |                             
     | <pcName>                    | <introducedDate> | <discontinuedDate> | <company> |
-    Then I click on create this computer button
-    Then the computer should be created
+    When I click on create this computer button
+    And the computer should be created
     | pcName                      |
     | <pcName>                    |
     Then I search for the computer
